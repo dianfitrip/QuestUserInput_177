@@ -34,10 +34,11 @@ fun FormDataDiri(modifier: Modifier = Modifier
         )
         Row {
             gender.forEach { item ->
-                Row(modifier = Modifier.selectable(
-                    selected = textJK == item,
-                    onClick = { textJK = item }
-                ), verticalAlignment = Alignment.CenterVertically) {
+                Row(
+                    modifier = Modifier.selectable(
+                        selected = textJK == item,
+                        onClick = { textJK = item }
+                    ), verticalAlignment = Alignment.CenterVertically) {
                     RadioButton(
                         selected = textJK == item,
                         onClick = {
@@ -45,5 +46,16 @@ fun FormDataDiri(modifier: Modifier = Modifier
                         })
                     Text(item)
                 }
+            }
+        }
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier.width(250.dp),
+            label = { Text(text = "Alamat Lengkap") },
+            onValueChange = {
+                textAlamat = it
+            }
+        )
     }
   }
