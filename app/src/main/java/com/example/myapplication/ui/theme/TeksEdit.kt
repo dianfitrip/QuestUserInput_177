@@ -15,4 +15,7 @@ fun FormDataDiri(modifier: Modifier = Modifier
     var nama by remember {mutableStateOf("")}
     var alamat by remember {mutableStateOf("")}
     var jenis by remember {mutableStateOf("")}
+
+    // Daftar opsi untuk Radio Button Jenis Kelamin
+    val gender: List<String> = listOf("Laki-laki","Perempuan")
   }
