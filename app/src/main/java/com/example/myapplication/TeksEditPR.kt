@@ -68,5 +68,14 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                 }
             )
         }
+        // card untuk membungkus form
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 6.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight(),
+            // Kartu tetap putih seperti di screenshot
+            colors = CardDefaults.cardColors(containerColor = Color.White)
+        )
     }
 }
