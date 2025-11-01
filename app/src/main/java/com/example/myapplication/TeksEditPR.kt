@@ -19,4 +19,8 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
     // List pilihan gander dan status
     val gender: List<String> = listOf("Laki-laki", "Perempuan")
     val statusOptions: List<String> = listOf("Janda", "Lajang", "Duda")
+    //WARNA HIJAU
+    val greenHeader = Color(0xFFC8E6C9)
+    val greenButton = Color(0xFF4CAF50)
+    val greenBackground = Color(0xFFE8F5E9)
 }
