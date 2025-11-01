@@ -4,4 +4,5 @@
 
     //PR form pendaftaran
     <string name="judul_form">Formulir Pendaftaran</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
 </resources>
