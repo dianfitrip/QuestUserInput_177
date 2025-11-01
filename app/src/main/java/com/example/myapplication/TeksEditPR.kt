@@ -172,6 +172,7 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                                 }
                             }
                         }
+                        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_small)))
                     }
                 }
             }
