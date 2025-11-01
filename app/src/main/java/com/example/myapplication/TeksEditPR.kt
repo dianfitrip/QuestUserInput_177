@@ -89,7 +89,15 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                             shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp)
                         ),
                     contentAlignment = Alignment.Center
-                )
+                ){
+                    Text(
+                        text = "Formulir Pendaftaran",
+                        fontSize = 24.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.Black,
+                        modifier = Modifier.padding(vertical = dimensionResource(R.dimen.padding_medium))
+                    )
+                }
             }
         }
     }
