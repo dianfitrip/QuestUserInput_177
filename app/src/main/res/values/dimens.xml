@@ -3,8 +3,4 @@
     <dimen name="padding_small">10dp</dimen>
     <dimen name="padding_medium">30dp</dimen>
     <dimen name="divider_tipis">1dp</dimen>
-    <dimen name="padding_large">20dp</dimen>
-    <dimen name="padding_extra_small">8dp</dimen>
-    <dimen name="margin_top">15.dp</dimen>
-    <dimen name="button_width">300.dp</dimen>
 </resources>
