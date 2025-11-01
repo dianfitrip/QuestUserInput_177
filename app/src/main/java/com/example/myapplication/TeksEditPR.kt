@@ -76,6 +76,21 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                 .fillMaxHeight(),
             // Kartu tetap putih seperti di screenshot
             colors = CardDefaults.cardColors(containerColor = Color.White)
-        )
+        ){
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.fillMaxHeight()
+            ){
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            greenHeader,
+                            shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp)
+                        ),
+                    contentAlignment = Alignment.Center
+                )
+            }
+        }
     }
 }
