@@ -14,4 +14,9 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
     var status by remember { mutableStateOf("") }
+    // state kontrol Dialog
+    var showDialog by remember { mutableStateOf(false) }
+    // List pilihan gander dan status
+    val gender: List<String> = listOf("Laki-laki", "Perempuan")
+    val statusOptions: List<String> = listOf("Janda", "Lajang", "Duda")
 }
