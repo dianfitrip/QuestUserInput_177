@@ -118,6 +118,7 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                                 textNama = it
                             }
                         )
+                        Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_small)))
                     }
                 }
             }
