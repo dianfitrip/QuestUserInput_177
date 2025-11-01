@@ -119,6 +119,32 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                             }
                         )
                         Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_small)))
+
+                        Column {
+                            Text(
+                                text = "Jenis Kelamin",
+                                style = MaterialTheme.typography.bodyLarge
+                            )
+                            gender.forEach { item ->
+                                Row(
+                                    modifier = Modifier
+                                        .selectable(
+                                            selected = textJK == item,
+                                            onClick = { textJK = item }
+                                        )
+                                        .fillMaxWidth(),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    RadioButton(
+                                        selected = textJK == item,
+                                        onClick = {
+                                            textJK = item
+                                        }
+                                    )
+                                    Text(item)
+                                }
+                            }
+                        }
                     }
                 }
             }
