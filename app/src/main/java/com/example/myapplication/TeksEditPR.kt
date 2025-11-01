@@ -98,6 +98,28 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
                         modifier = Modifier.padding(vertical = dimensionResource(R.dimen.padding_medium))
                     )
                 }
+                Column (
+                    modifier = Modifier
+                        .padding(dimensionResource(R.dimen.padding_small))
+                        .fillMaxHeight()
+                ){
+                    Column(
+                        modifier = Modifier
+                            .weight(1f)
+                            .verticalScroll(rememberScrollState()),
+                    ){
+                        OutlinedTextField(
+                            value = textNama,
+                            singleLine = true,
+                            shape = MaterialTheme.shapes.large,
+                            modifier = Modifier.fillMaxWidth(),
+                            label = { Text(text = "Nama Lengkap") },
+                            onValueChange = {
+                                textNama = it
+                            }
+                        )
+                    }
+                }
             }
         }
     }
