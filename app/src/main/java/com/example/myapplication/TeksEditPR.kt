@@ -23,4 +23,50 @@ fun FormDataDiriPR(modifier: Modifier = Modifier){
     val greenHeader = Color(0xFFC8E6C9)
     val greenButton = Color(0xFF4CAF50)
     val greenBackground = Color(0xFFE8F5E9)
+
+    Column(
+        modifier = modifier
+            .background(greenBackground)
+            .padding(dimensionResource(R.dimen.padding_small))
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        //bagian untuk alert pop up dialog
+        if (showDialog) {
+            AlertDialog(
+                onDismissRequest = {
+                    showDialog = false
+                    textNama = ""
+                    textJK = ""
+                    textStatus = ""
+                    textAlamat = ""
+                },
+                text = {
+                    Column {
+                        Text(text = "Nama   : $nama")
+                        Text(text = "Gender : $jenis")
+                        Text(text = "Status : $status")
+                        Text(text = "Alamat : $alamat")
+                    }
+                },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            showDialog = false
+                            textNama = ""
+                            textJK = ""
+                            textStatus = ""
+                            textAlamat = ""
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = greenButton
+                        )
+                    ) {
+                        Text("OK")
+                    }
+                }
+            )
+        }
+    }
 }
